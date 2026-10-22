@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in | EduDesk</title>
+<script>(function(){try{var c=localStorage.getItem('edudesk:theme');var d=c==='dark'||(c!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches);var h=document.documentElement;h.dataset.theme=d?'dark':'light';h.dataset.sidebar=localStorage.getItem('edudesk:sidebar')==='collapsed'?'collapsed':'expanded';}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css?v=4.0.1">
+<link rel="stylesheet" href="css/base.css?v=4.0.1">
+<link rel="stylesheet" href="css/layout.css?v=4.0.1">
+<link rel="stylesheet" href="css/components.css?v=4.0.1">
+<link rel="stylesheet" href="css/pages.css?v=4.0.1">
+</head>
+<body class="login-body" data-root="">
+  <button type="button" class="icon-btn login-theme" id="theme-cycle" aria-label="Change theme"></button>
+
+  <main class="login-wrap">
+    <div class="card login-card">
+      <div class="login-brand"><span class="sb-logo" id="login-logo"></span><span>EduDesk</span></div>
+      <div>
+        <h1>Sign in</h1>
+        <p class="muted">Use your admin or teacher account.</p>
+      </div>
+
+      <form id="login-form" class="stack" novalidate>
+        <div class="field">
+          <label for="email">Email</label>
+          <input class="input" id="email" type="email" autocomplete="username" placeholder="name@school.pk" required>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="input-group">
+            <input class="input" id="password" type="password" autocomplete="current-password" required>
+            <button type="button" class="icon-btn" id="toggle-pw" aria-label="Show password"></button>
+          </div>
+        </div>
+        <label class="check"><input type="checkbox" id="remember"> Keep me signed in for 7 days</label>
+        <div class="form-error" id="login-error" role="alert" hidden></div>
+        <button class="btn btn-primary btn-block" type="submit" id="login-btn">Sign in</button>
+      </form>
+
+      <div class="demo-box">
+        <div class="demo-row"><span class="muted">Demo admin: admin@edudesk.pk</span><button type="button" class="btn btn-secondary btn-sm" data-fill="admin">Fill</button></div>
+        <div class="demo-row"><span class="muted">Demo teacher: teacher@edudesk.pk</span><button type="button" class="btn btn-secondary btn-sm" data-fill="teacher">Fill</button></div>
+      </div>
+    </div>
+    <p class="muted login-foot">Version 4.0.1 (batches, papers, money flow). Data is saved in this browser only. <a href="#" id="reset-demo">Reset demo data</a></p>
+  </main>
+
+<script src="js/core/load.js" data-root="" data-page="login"></script>
+</body>
+</html>

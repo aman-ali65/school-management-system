@@ -1,0 +1,84 @@
+:root {
+  color-scheme: light;
+  --font: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --bg-page: #F6F7F9;
+  --bg-card: #FFFFFF;
+  --bg-hover: #F1F3F6;
+  --bg-input: #FFFFFF;
+  --border: #E3E6EB;
+  --border-strong: #CBD2DC;
+
+  --text: #0F172A;
+  --text-muted: #64748B;
+
+  --primary: #4F46E5;
+  --primary-hover: #4338CA;
+  --primary-soft: #EEF2FF;
+  --on-primary: #FFFFFF;
+
+  --success: #16A34A;
+  --danger: #DC2626;
+  --warning: #D97706;
+  --info: #0EA5E9;
+  --whatsapp: #25D366;
+
+  --present-bg: #DCFCE7; --present-text: #166534;
+  --absent-bg: #FEE2E2;  --absent-text: #991B1B;
+  --late-bg: #FEF3C7;    --late-text: #92400E;
+  --leave-bg: #E0F2FE;   --leave-text: #075985;
+
+  --shadow-card: 0 1px 2px rgba(15, 23, 42, .05), 0 6px 16px rgba(15, 23, 42, .07);
+  --shadow-modal: 0 10px 40px rgba(15, 23, 42, .22);
+  --overlay: rgba(15, 23, 42, .5);
+
+  --radius-control: 8px;
+  --radius-card: 12px;
+  --radius-modal: 16px;
+  --radius-pill: 999px;
+
+  --c1: #4F46E5; --c2: #16A34A; --c3: #D97706; --c4: #DC2626; --c5: #0EA5E9; --c6: #8B5CF6; --c7: #14B8A6; --c8: #EC4899;
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px;
+  --gap: 12px;
+  --sb-w: 240px;
+  --topbar-h: 56px;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-page: #0A0D12;
+  --bg-card: #1A2029;
+  --bg-hover: #242C38;
+  --bg-input: #131820;
+  --border: #2E3744;
+  --border-strong: #435064;
+
+  --text: #E6EAF0;
+  --text-muted: #94A0B1;
+
+  --primary: #6366F1;
+  --primary-hover: #818CF8;
+  --primary-soft: #262A5C;
+
+  --success: #4ADE80;
+  --danger: #F87171;
+  --warning: #FBBF24;
+  --info: #38BDF8;
+
+  --present-bg: #0F3D2E; --present-text: #6EE7B7;
+  --absent-bg: #4A1D1D;  --absent-text: #FCA5A5;
+  --late-bg: #4A3410;    --late-text: #FCD34D;
+  --leave-bg: #0C3A52;   --leave-text: #7DD3FC;
+
+  --c1: #818CF8; --c2: #4ADE80; --c3: #FBBF24; --c4: #F87171; --c5: #38BDF8; --c6: #A78BFA; --c7: #2DD4BF; --c8: #F472B6;
+  --shadow-card: 0 0 0 1px rgba(255,255,255,.02), 0 6px 18px rgba(0, 0, 0, .5);
+  --shadow-modal: 0 10px 40px rgba(0, 0, 0, .55);
+  --overlay: rgba(0, 0, 0, .65);
+}
+
+@media (min-width: 1024px) {
+  html[data-sidebar="collapsed"] { --sb-w: 72px; }
+}
+@media (max-width: 1023.98px) {
+  :root { --sb-w: 280px; }
+}
